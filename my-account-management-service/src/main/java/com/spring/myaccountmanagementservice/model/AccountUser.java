@@ -34,10 +34,10 @@ public class AccountUser implements Serializable {
     @Column(name = "user_profile_id")
     private Long userProfileId;
 
-    @Column(name = "accountNumber")
+    @Column(name = "account_number")
     private String accountNumber;
 
-    @Column(name = "accountType")
+    @Column(name = "account_type")
     private String accountType;
 
     @Column(name = "balance")
