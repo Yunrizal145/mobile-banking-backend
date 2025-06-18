@@ -133,7 +133,7 @@ public class UserManagementService {
     public GetUserAuthenticationResponse getUserAuthentication(GetUserAuthenticationRequest request) {
         log.info("start get data user authentication");
         try {
-            Optional<UserAuthentication> userAuthentication = userAuthenticationRepository.findTopByUserProfileIdAAndIsDeleted(request.getUserProfileId(), false);
+            Optional<UserAuthentication> userAuthentication = userAuthenticationRepository.findTopByUserProfileIdAndIsDeleted(request.getUserProfileId(), false);
             if (userAuthentication.isEmpty()) {
                 throw new NullPointerException("Data User Authentication is null");
             }
@@ -149,7 +149,7 @@ public class UserManagementService {
     public ValidateMpinResponse validateMpin(ValidateMpinRequest request) {
         log.info("start validate mpin");
         try {
-            Optional<UserAuthentication> userAuthOpt = userAuthenticationRepository.findTopByUserProfileIdAAndIsDeleted(request.getUserProfileId(), false);
+            Optional<UserAuthentication> userAuthOpt = userAuthenticationRepository.findTopByUserProfileIdAndIsDeleted(request.getUserProfileId(), false);
             if (userAuthOpt.isEmpty()) {
                 throw new NullPointerException("User Authentication is Null");
             }
