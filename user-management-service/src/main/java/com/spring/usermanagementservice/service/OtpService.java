@@ -25,10 +25,10 @@ import java.util.Optional;
 @Service
 public class OtpService {
 
-    @Value("${}")
+//    @Value("${}")
     private String apiUrl;
 
-    @Value("${}")
+//    @Value("${}")
     private String apiKey;
 
     @Autowired
