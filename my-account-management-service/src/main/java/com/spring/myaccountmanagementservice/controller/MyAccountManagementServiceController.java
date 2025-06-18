@@ -5,7 +5,7 @@ import com.spring.myaccountmanagementservice.dto.GetMutasiByAccountNumberRespons
 import com.spring.myaccountmanagementservice.dto.GetSaldoByAccountNumberRequest;
 import com.spring.myaccountmanagementservice.dto.GetSaldoByAccountNumberResponse;
 import com.spring.myaccountmanagementservice.service.MyAccountManagementService;
-import com.spring.service.UserManagementService;
+import com.spring.myaccountmanagementservice.service.UserManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

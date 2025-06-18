@@ -1,6 +1,5 @@
 package com.spring.myaccountmanagementservice.dto;
 
-import com.spring.myaccountmanagementservice.model.Mutation;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
